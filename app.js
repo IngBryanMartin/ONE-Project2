@@ -1,5 +1,5 @@
 //Variables
-let numeroSecreto = 2;
+let numeroSecreto = 5;
 let numeroUsuario = prompt("Me indicas un número entre 1 y 10 por favor:");
 
 // Agrega un console.log para verificar el valor de "intento" después de la entrada del usuario
@@ -16,10 +16,11 @@ if (numeroUsuario == numeroSecreto) {
     //Acertamos, fue verdadera la condición
     alert(`Acertaste, el número es: ${numeroUsuario}`);
 } else {
-    // Agrega un console.log para verificar el valor de "numeroSecreto" cuando el jugador se equivoca
-    console.log('Valor del número secreto:', numeroSecreto);
-    //La condición no se cumplió
-    alert('Lo siento, no acertaste el número');
+    if (numeroUsuario > numeroSecreto){
+        alert('El número secreto es menor');
+    } else {
+        alert('El nùmero secreto es mayor');
+    }
 }
 
 /*
